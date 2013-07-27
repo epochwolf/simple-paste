@@ -2,7 +2,9 @@
 $token = $_COOKIE["token"];
 
 if(empty($token)){
-  $token = uniqid();
+  $len = 16;
+  $strong = TRUE;
+  $token = bin2hex(openssl_random_pseudo_bytes($len, $strong));
   setcookie("token", $token);
 }
 
