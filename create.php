@@ -3,12 +3,12 @@
 
 $paste_contents = $_POST["contents"];
 
-if(!empty($paste_contents)){
+if(!empty($paste_contents) && $_COOKIE["token"] === $_POST["_token"]){
   $paste_id = uniqid(); // Insecure id generation.
   $encoded_contents = htmlentities($paste_contents, 0, "UTF-8", true);
   file_put_contents("pastes/$paste_id.txt", $encoded_contents); // No error handling.
 
-  header("Location: /show.php?paste=$paste_id"); // Relative url for redirect
+  header("Location: http://${_SERVER['HTTP_HOST']}/show.php?paste=$paste_id"); // Relative url for redirect
 
 }else{ 
   $page_title = "Oh no";
