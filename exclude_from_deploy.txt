@@ -1,0 +1,7 @@
+.git
+.gitignore
+deploy.sh
+exclude_from_deploy.txt
+LICENSE
+pastes/*
+README.md
