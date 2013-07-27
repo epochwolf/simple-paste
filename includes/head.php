@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/site.css" rel="stylesheet" media="screen"></link>
     <link href="/favicon.ico" rel="icon"></link>
-    <script src="/site.js"></script>
   </head>
 <body>
 <div id="wrap">
