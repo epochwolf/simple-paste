@@ -1,0 +1,111 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #fff;
+  color: #222;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+}
+
+#header{
+  color: #ffffff;
+  border-bottom: 10px solid #455677;;
+}
+
+#header h1{
+  color: #000000;
+  font-size: 2.2em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+#header h1 a, #header h1 a:active, #header h1 a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+#footer {
+  border-top: 1px solid #ddd; 
+}
+
+#header, #footer, #contents{
+    width: 620px;
+    margin: auto;
+}
+
+@media (max-width: 680px) {
+  #header, #footer, #contents{
+      width: 500px;
+  }
+}
+
+@media (max-width: 520px) {
+  #header, #footer, #contents{
+      width: 300px;
+  }
+}
+
+#contents{
+  margin-top: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000; 
+}
+
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1.1em;
+}
+
+article {
+  line-height: 1.6;
+}
+
+pre, code {
+  font-family: Georgia, serif;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+a, a:active, a:visited {
+  color: #455677;
+}
+
+hr{
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+
+.left{
+  float: left;
+}
+
+
+.right{
+  float: right;
+}
+
+.error{
+  color: red;
+  font-weight: bold;
+}
