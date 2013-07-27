@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><?=$page_title || "Simple Paste" ?> by EpochWolf</title>
+    <title><?=isset($page_title) ? $page_title : "Simple Paste" ?> by EpochWolf</title>
     <meta charset="utf-8">
     <meta http_equiv="X-UA-Compatible" content="IE=edge;chrome=1">
     <meta name="author"   content="epochwolf">
