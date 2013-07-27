@@ -3,7 +3,7 @@
 
 $paste_contents = $_POST["contents"];
 
-if(!empty($paste_contents) && $_COOKIE["token"] === $_POST["_token"]){
+if(!empty($paste_contents) && mb_check_encoding($paste_contents, "UTF-8") && $_COOKIE["token"] === $_POST["_token"]){
   $paste_id = uniqid(); // Insecure id generation.
   $encoded_contents = htmlentities($paste_contents, 0, "UTF-8", true);
   file_put_contents("pastes/$paste_id.txt", $encoded_contents); // No error handling.
